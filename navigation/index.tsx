@@ -59,16 +59,16 @@ function BottomTabNavigator() {
         tabBarActiveTintColor: Colors[colorScheme].tint,
       }}>
       <BottomTab.Screen
-        name="TabOne"
+        name="Home"
         component={HomeScreen}
-        options={({ navigation }: RootTabScreenProps<'TabOne'>) => ({
+        options={({ navigation }: RootTabScreenProps<'Home'>) => ({
           headerShown:false,
           tabBarShowLabel:false,
           tabBarIcon: ({ color }) =>  <Home set="bold" stroke='bold' primaryColor={color} />,
         })}
       />
       <BottomTab.Screen
-        name="TabTwo"
+        name="Products"
         component={ProductsScreen}
         options={{
           headerShown:false,
@@ -77,7 +77,7 @@ function BottomTabNavigator() {
         }}
       />
          <BottomTab.Screen
-        name="TabThree"
+        name="Stocks"
         component={StockScreen}
         options={{
           headerShown:false,
@@ -86,7 +86,7 @@ function BottomTabNavigator() {
         }}
       />
         <BottomTab.Screen
-        name="TabFour"
+        name="Settings"
         component={SettingsScreen}
         options={{
           headerShown:false,
