@@ -52,6 +52,7 @@ const styles = StyleSheet.create({
   getStartedContainer: {
     alignItems: 'center',
     marginHorizontal: 50,
+    backgroundColor:'white'
   },
   homeScreenFilename: {
     marginVertical: 7,
