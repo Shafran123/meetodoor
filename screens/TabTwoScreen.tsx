@@ -57,7 +57,7 @@ const TabTwoScreen = (props: any) => {
 
   const renderItem = (data: any) => (
     console.log(data, 'props'),
-    <ProductItem data={data} onPress={() => console.log('he' , props.navigation.navigate('ScreenTwo'))} />
+    <ProductItem data={data} onPress={() =>props.navigation.navigate('ScreenTwo')} />
   );
 
 
