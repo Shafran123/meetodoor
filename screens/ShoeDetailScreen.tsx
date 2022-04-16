@@ -242,17 +242,7 @@ function ShowDetailScreen() {
 
             </Modalize>
 
-            <View style={{
-                display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'absolute', bottom: 40, right: 30, zIndex: 10000, height: 80, width: 80, borderRadius: 40, backgroundColor: '#F3662A' ,shadowColor: "#000",
-                shadowOffset: {
-                    width: 0,
-                    height: 3,
-                },
-                shadowOpacity: 0.27,
-                shadowRadius: 4.65,
-
-                elevation: 6,
-            }}>
+            <View style={styles.floatingButtonContainer}>
                 <Buy size={30} set="bulk" primaryColor="white" />
             </View>
 
@@ -332,6 +322,17 @@ const styles = StyleSheet.create({
     txtSizeActive: {
         fontSize: 20, fontFamily: 'PoppinSemiBold', color: 'white'
     },
+    floatingButtonContainer:{
+        display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'absolute', bottom: 40, right: 30, zIndex: 10000, height: 80, width: 80, borderRadius: 40, backgroundColor: '#F3662A' ,shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 3,
+        },
+        shadowOpacity: 0.27,
+        shadowRadius: 4.65,
+
+        elevation: 6,
+    }
 
 })
 
