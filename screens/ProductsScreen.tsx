@@ -8,7 +8,7 @@ import EditScreenInfo from '../components/EditScreenInfo';
 import ProductItem from '../components/ProductItem/ProductItem';
 import Stock from '../components/StockComponent/Stock';
 
-const TabTwoScreen = (props: any) => {
+const ProductsScreen = (props: any) => {
 
   let data = [
     {
@@ -157,4 +157,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default TabTwoScreen
+export default ProductsScreen

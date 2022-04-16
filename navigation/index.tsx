@@ -15,11 +15,13 @@ import Colors from '../constants/Colors';
 import useColorScheme from '../hooks/useColorScheme';
 import ModalScreen from '../screens/ModalScreen';
 import NotFoundScreen from '../screens/NotFoundScreen';
-import ScreenTwo from '../screens/ScreenTwo';
-import TabOneScreen from '../screens/TabOneScreen';
-import TabTwoScreen from '../screens/TabTwoScreen';
 import { RootStackParamList, RootTabParamList, RootTabScreenProps } from '../types';
 import LinkingConfiguration from './LinkingConfiguration';
+import HomeScreen from '../screens/HomeScreen';
+import ProductsScreen from '../screens/ProductsScreen';
+import StockScreen from '../screens/StockScreen';
+import SettingsScreen from '../screens/SettingsScreen';
+import ShowDetailScreen from '../screens/ShoeDetailScreen';
 
 export default function Navigation() {
   return (
@@ -40,7 +42,7 @@ function RootNavigator() {
       <Stack.Group screenOptions={{ presentation: 'modal' }}>
         <Stack.Screen name="Modal" component={ModalScreen} />
       </Stack.Group>
-      <Stack.Screen name="ScreenTwo" component={ScreenTwo} options={{ headerShown: false }} />
+      <Stack.Screen name="ScreenTwo" component={ShowDetailScreen} options={{ headerShown: false }} />
     </Stack.Navigator>
   );
 }
@@ -58,7 +60,7 @@ function BottomTabNavigator() {
       }}>
       <BottomTab.Screen
         name="TabOne"
-        component={TabOneScreen}
+        component={HomeScreen}
         options={({ navigation }: RootTabScreenProps<'TabOne'>) => ({
           headerShown:false,
           tabBarShowLabel:false,
@@ -67,8 +69,7 @@ function BottomTabNavigator() {
       />
       <BottomTab.Screen
         name="TabTwo"
-        component={TabTwoScreen}
-        
+        component={ProductsScreen}
         options={{
           headerShown:false,
           tabBarShowLabel:false,
@@ -77,7 +78,7 @@ function BottomTabNavigator() {
       />
          <BottomTab.Screen
         name="TabThree"
-        component={TabTwoScreen}
+        component={StockScreen}
         options={{
           headerShown:false,
           tabBarShowLabel:false, 
@@ -86,7 +87,7 @@ function BottomTabNavigator() {
       />
         <BottomTab.Screen
         name="TabFour"
-        component={TabTwoScreen}
+        component={SettingsScreen}
         options={{
           headerShown:false,
           tabBarShowLabel:false,

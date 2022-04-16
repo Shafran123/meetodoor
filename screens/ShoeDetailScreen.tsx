@@ -10,7 +10,7 @@ import { TouchableOpacity as reactTouchableOpacity } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
 const TouchableOpacity = Platform.OS === 'ios' ? reactTouchableOpacity : guesterTouchableOpacity;
 
-function ScreenTwo() {
+function ShowDetailScreen() {
 
     let data = {
         name: 'NIKE AIR MAX 200',
@@ -348,4 +348,4 @@ const colorStyles = (props: any) => StyleSheet.create({
 })
 
 
-export default ScreenTwo
+export default ShowDetailScreen
